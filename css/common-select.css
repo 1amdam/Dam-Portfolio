@@ -1,0 +1,220 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap');
+html,body{
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color:white;
+    color:#474747;
+    font-size:16px;
+    margin:0;
+    height:100%;
+    /* overflow:hidden; */
+    
+}
+a{
+    color:#333333;
+    text-decoration: none;
+}
+a:hover{
+    color:black;
+}
+img{
+    vertical-align: middle;
+}
+table,th,td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* 헤더, 콘텐츠, 푸터 */
+main{
+    width:100%;
+    max-width:1440px;
+    margin:auto;
+    height:100%;
+    padding-top:0;
+}
+header, section, footer{
+    width:100%;
+    margin:auto;
+    border-bottom:1px dashed black;
+}
+
+
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    height:70px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9999;
+    background-color:white; 
+}
+.header-wrap{
+    width:100%;
+    max-width:1280px;
+    height:100%;
+    margin:auto;
+    /* 수정 */
+    position:relative;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 50px;
+}
+.first-box{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 네비 */
+.nav-wrap{
+    width:40%;
+}
+.selectBox2 {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    border: 2px solid lightcoral;
+    background-size: 20px;
+    cursor: pointer;
+    z-index:10;
+  }
+  .selectBox2:before {
+    content: '';
+    position: absolute;
+    width:20px;
+    height:20px;
+    top: 40%;
+    transform: translateY(-50%); 
+    right: 5px; 
+    z-index: -1;
+    background-image:url(../images/arrow.png);
+    background-repeat: no-repeat; 
+    background-size:cover;
+    background-position: center
+  }
+  
+  .selectBox2:after {
+    content: '';
+    display: block; 
+    width: 2px;
+    height: 100%; 
+    position: absolute; 
+    top: 0; 
+    right: 35px;
+    background: lightcoral;
+  }
+  
+  .selectBox2 .label {
+    display: flex;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    border: 0 none;
+    outline: 0 none;
+    padding-left: 15px;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .selectBox2 .optionList {
+    position: absolute; 
+    top: 28px;
+    left: 0;
+    width: 100%;
+    background: lightcoral;
+    color: #fff;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    display:none;
+    top:50px;
+  }
+
+  .selectBox2 .optionItem {
+    border-bottom: 1px dashed rgb(170, 72, 72);
+    padding: 5px 15px 5px;
+    transition: .1s;
+  }
+  
+  .selectBox2 .optionItem:hover {
+    background: rgb(175, 93, 93);
+  }
+  
+  .selectBox2 .optionItem:last-child {
+    border-bottom: 0 none;
+  }
+  
+  /* 스크롤 커스텀 */
+  .selectBox2 .optionList::-webkit-scrollbar {width: 6px;}
+  .selectBox2 .optionList::-webkit-scrollbar-track {background: transparent; }
+  .selectBox2 .optionList::-webkit-scrollbar-thumb {background: #303030; border-radius: 45px;}
+  .selectBox2 .optionList::-webkit-scrollbar-thumb:hover {background: #303030;}
+
+  .optionItem a{
+    display:block;
+    width:100%;
+    height:100%;
+    color:white;
+  }
+  .optionItem.clickActive{
+    background-color:skyblue;
+  }
+/* 추가 보완 */
+.nav-list a.clickActive{
+    background-color:skyblue;
+}
+
+@media screen and (min-width:450px){
+    
+}
+@media screen and (min-width:640px){
+    
+    
+
+}
+@media screen and (min-width:768px){
+    
+}
+@media screen and (min-width:1024px){
+    section:first-child{
+        flex-direction: column;
+    }
+    header{
+        position:static;
+        max-width:auto;
+        top:-100px;
+        transition:0.5s;
+    }
+    header.topHeader{
+        position:fixed;
+        top:0;
+    }
+    
+    
+    
+}
+@media screen and (min-width:1280px){
+    
+}
+@media screen and (min-width:1440px){
+    
+}
+
+
+

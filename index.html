@@ -1,0 +1,153 @@
+<!doctype html>
+<!-- html문서를 시작 -->
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <!-- 반응형 정보 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 파비콘 작성 -->
+        <link rel="shortcut icon" href="images/favicon.png">
+        <!-- 브라우저의 제목 -->
+        <title>Portfolio</title>
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+        <script src="./js/common.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+        <link rel="stylesheet" href="css/common.css">
+
+    </head>
+    <body>
+        
+        <!-- 사이드네비가 들어갈 곳 -->
+        <div class="side-wrap">
+            <div class="side-nav">
+                <a href="#about" class="side-active"></a>
+                <a href="#web"></a>
+                <a href="#banner"></a>
+                <a href="#detail"></a>
+                <a href="#icon"></a>
+                <a href="#skill"></a>
+                <a href="#ep"></a>
+            </div>
+        </div>
+        
+        <main>
+            <section class="section" id="about">
+                <header>
+                    <div class="header-wrap">
+                        <h1>PORTFOLIO</h1>
+                        <nav class="nav-wrap">
+                            <button class="navBt">Work view</button>
+                            <div class="nav-list">
+                                <a href="#about" class="clickActive">About</a>
+                                <a href="#web">Website</a>
+                                <a href="#banner">Banner</a>
+                                <a href="#detail">Detail</a>
+                                <a href="#icon">Icon</a>
+                                <a href="#skill">Skill</a>
+                                <a href="#ep">Epilogue</a>
+                            </div>
+                            
+                        </nav>
+                    </div>
+                </header>
+                <div class="first-box">
+                    <div class="about-group1">
+                        <h2>About Me</h2>
+                        <div class="photo">
+                            <img src="images/m-s2.jpg" alt="프로필 사진">
+                        </div>
+                    </div>
+                    <div class="about-group2">
+                        <ul>
+                            <li><strong>이름 : </strong></li>
+                            <li><strong>나이 : </strong>나이</li>
+                            <li><strong>생년월일 : </strong>학력 또는 생년월일</li>
+                            <li><strong>취미 : </strong>학습소개 또는 취미</li>
+                            <li><strong>좌우명 :</strong>경력사항 또는 좌우명</li>
+                        </ul>
+                        <div class="about">
+                            자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 
+                             자기소개 자기소개 자기소개 자기소개  
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </section>
+            <section class="section" id="web">
+                <div class="container">
+                    <div class="web-group web-view">
+                        <h2>Coffee Website</h2>
+                        <div class="web-img">
+                            <a href="#">
+                                <picture>
+                                    <source media="(min-width: 1024px)" srcset="./images/8.png">
+                                    <img src="./images/phone-img.png" alt="coffee">
+                                </picture>
+                            </a>
+                
+                            <div class="response">
+                                <img src="./images/response.png">
+                            </div>
+                            <span class="more">
+                                작업보기
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="web-group web-explan">
+                        <h2>Coffee Website</h2>
+                        <div class="response">
+                            <img src="./images/response.png">
+                        </div>
+                        <span class="more">
+                            작업보기
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="banner">
+                <h2>배너</h2>
+                <div class="banner-box">
+                    <div>
+                        <a href="#">
+                            <img src="./images/event1.jpg">
+                        </a>
+                        <a href="#">
+                            <img src="./images/event2.jpg">
+                        </a>
+                        <a href="#">
+                            <img src="./images/event3.jpg">
+                        </a>
+                    
+                        <a href="#">
+                            <img src="./images/event1.jpg">
+                        </a>
+                        <a href="#">
+                            <img src="./images/event2.jpg">
+                        </a>
+                        <a href="#">
+                            <img src="./images/event3.jpg">
+                        </a>
+                        
+                    </div>
+                </div>
+                
+            </section>
+            <section class="section" id="detail">
+                <h2>상세 이미지</h2>
+            </section>
+            <section class="section" id="icon">
+                <h2>아이콘</h2>
+            </section>
+            <section class="section" id="skill">
+                <h2>스킬</h2>
+            </section>
+            <section class="section" id="ep">
+                <h2>Epilogue</h2>
+            </section>
+            <footer>푸터</footer>
+        </main>
+    </body>
+</html>
