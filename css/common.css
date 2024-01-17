@@ -92,15 +92,21 @@ header{
     padding:0 50px; */
 }
 h1{
-    width: 200px;
-    color: #2776e1;
-    padding: 20px 0;
-    padding-left: 10px;
+    width: 120px;
+    /* color: #2776e1; */
+    /* padding: 20px 0; */
+    padding-left: 20px;
+    padding-top: 20px;
     /* border: 1px solid black; */
-    font-size: 1.7rem;
-    font-weight: 800;
-    letter-spacing: -1;
+    /* font-size: 1.7rem; */
+    /* font-weight: 800; */
+    /* letter-spacing: -1; */
 }
+
+.logo img{
+    width: 100%;
+}
+
 /*  */
 .zero-box{
     width:100%;
@@ -110,7 +116,7 @@ h1{
     align-items: center;
     position: relative;
     /* border: 1px solid black; */
-    background: url(../images/tape2.png) no-repeat center;
+    background: url(../images/tape3.png) no-repeat center;
     background-size: 95%;
 }
 /* .first-box h2::after{
@@ -210,9 +216,10 @@ h1{
     display:flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid black; */
     /* 수정 */
     flex-direction: column;
-    padding-top:15%;
+    /* padding-top:15%; */
   
 }
 
@@ -271,7 +278,7 @@ h1{
 .about-group1{
     width: 25%;
     min-width: 300px;
-    height: 40%;
+    height: 47%;
     min-height: 200px;
     display: flex;
     flex-direction: column;
@@ -282,6 +289,7 @@ h1{
     transition: 1s;
     transition-delay: 0.5s;
     visibility: hidden;
+  
     /* border: 1px solid black; */
 
 }
@@ -312,22 +320,24 @@ h1{
 }
 .photo{
     width:60%;
-    height:70%;
+    height:60%;
     /* border:1px solid black; */
     /* border-radius: 5%; */
     overflow: hidden;
+    
+    /* margin: auto; */
     /* box-shadow:5px 5px 2px #e0dede */
 }
 .photo img{
     width:100%;
     height:100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .about-group2{
     width:80%;
-    height:300px;
-    /* border:1px solid black; */
-    margin-top:20px;
+    height:400px;
+    /* border:1px solid rgb(255, 145, 145); */
+    /* margin-top:20px; */
     display:flex;
     flex-direction: column;
     justify-content: space-around;
@@ -336,6 +346,29 @@ h1{
     transition: 0.5s;
     transition-delay: 0.5s;
     visibility: hidden;
+}
+.a-gr2-wrap{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* border: 1px solid black; */
+    /* margin-top: 30px; */
+}
+.a-gr2{
+    width: 50%;
+    /* border: 1px solid black; */
+    padding: 10px 0;
+    line-height: 140%;
+}
+.a-gr2 h3{
+    color: #2776e1;
+    padding: 25px 0;
+    padding-left: 20px;
+}
+.a-gr2 h4{
+    padding-left: 20px;
 }
 /* about 애니메이션 추가 */
 .about-group1.aboutActive,
@@ -376,7 +409,8 @@ h1{
 
 /* website 섹션 */
 #web{
-    background-image: linear-gradient(to bottom,#e3fff0,#efefef);
+    /* background-image: linear-gradient(to bottom,#e3fff0,#efefef); */
+    background-image: linear-gradient(to bottom,#bfffcc,#e3fff0);
     /* background-color: #bbc8ff; */
 }
 section:nth-child(2){
@@ -513,13 +547,13 @@ section:nth-child(2){
 .more{
     position:absolute;
     display:block;
-    width:80px;
-    bottom:10px;
-    border:1px solid black;
+    width:100px;
+    bottom:0px;
+    /* border:1px solid black; */
     right:20px;
     background-color:#267152;
     text-align:center;
-    padding:5px 0;
+    padding:10px 0;
     color:white;
     border-radius:50px;
 }
@@ -713,9 +747,17 @@ section:nth-child(3){
         /* border: 1px solid black; */
     }
     .web-explan{
-        width: 20%;
-        height: 70%;
+        width: 25%;
+        height: 40%;
+        padding: 0 20px;
     }
+    .web-explan h2{
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: justify;
+        line-height: 140%;
+    }
+    
     .web-view h2{
         font-size:1.5rem;
     }
@@ -740,8 +782,25 @@ section:nth-child(3){
         justify-content: center;
         align-items: center;
         position:relative;
-        background-color:#f4f3f3;
+        background-color:#ffffffa8;
+        border-radius: 10px;
+        margin-right: 3%;
     }
+    .web-explan::after{
+        content: "";
+        border-top: 20px solid #ffffffa8;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 0px solid transparent;
+        position: absolute;
+        bottom: -20px;
+        right: 20px;
+
+    }
+    .web-explan .more{
+        bottom: 10px;
+    }
+    
     
     .side-nav{
         /* width:30px; */
@@ -767,6 +826,18 @@ section:nth-child(3){
     /* .roll-txt #rolltext{
         font-size: 4rem;
     } */
+    .about-group1{
+        margin-bottom: 180px;
+    }
+    .about-group2{
+        margin-top:20px;
+    }
+    .a-gr2-wrap{
+        margin-top: 30px; 
+    }
+    .first-box{
+        /* padding-top: 15%; */
+    }
 }
 @media screen and (min-width:910px){
     .zero-box{
@@ -777,7 +848,7 @@ section:nth-child(3){
         align-items: center;
         position: relative;
         /* border: 1px solid black; */
-        background: url(../images/tape2.png) no-repeat center;
+        background: url(../images/tape3.png) no-repeat center;
         background-size: 60%;
     }
     .zero-box h2{

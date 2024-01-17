@@ -2,12 +2,15 @@
     width: 100%;
     max-width: 300px;
     padding: 0 15px;
-    margin: 90px auto;
+    /* margin: 90px auto; */
+    margin: 0 auto;
     /* border: 1px solid black; */
+
 }
 
 .progressbar-item {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
+    margin-bottom: 5px;
     /* display: flex; */
 }
 
@@ -15,10 +18,12 @@
     margin: 0 0 10px;
     overflow: visible;
     background: transparent;
+    /* border: 1px solid red; */
 }
 
 .progress-number {
-    padding-bottom: 7px;
+    /* padding-bottom: 7px; */
+    padding-bottom: 2px;
     position: relative;
     margin: 5px 0;
     font-family: Montserrat, sans-serif;
@@ -26,23 +31,30 @@
     line-height: 15px;
     font-weight: 400;
     color: #2e2e2e;
+    font-family: 'Inter';
+    /* border: 1px solid blue; */
 }
 
 .progress-title {
     z-index: 100;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 700;
     margin: 0;
+    font-family: 'Inter';
+    /* border: 1px solid black; */
 }
 
 .progress-number-mark {
     font-family: var(--progress-font, "Open Sans", sans-serif);
-    font-weight: var(--fw-500);
-    font-size: var(--fs-16);
+    /* font-weight: var(--fw-500); */
+    font-size: 12px;
+    font-weight: 600;
     line-height: 1;
-    padding: 8px 8px 7px;
+    /* padding: 8px 8px 7px; */
+    padding: 6px 6px 4px;
     border-radius: 3px;
     color: var(--progress-number-color, #fff);
+    font-family: 'Inter';
     margin-bottom: 4px;
     border-radius: 3px;
     background: var(--progress-number-bg, rgba(118, 166, 255, 0.584));
@@ -66,6 +78,7 @@
     background: var(--progressbar-bg, #e2f2ff);
     overflow: hidden;
     border-radius: 6px;
+    /* border: 1px solid black; */
 }
 
 .progress-fill {
