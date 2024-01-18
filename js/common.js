@@ -2,10 +2,13 @@ $(document).ready(function(){
     /* *************************************************************************** */
       var winHeight=0; //브라우저의 높이 변수
       var windowWidth;
+
       
     //  슬라이더 변수
 
     // 터치 변수 
+
+
 
     // 브라우저의 높이값 얻기 위한 함수
     function $wh(){
@@ -75,6 +78,21 @@ $(document).ready(function(){
           }
       }
       $animation();
+
+    //   $(".b-d-box a").each(function(){
+    //     $(this).click(function(){
+    //         $(".img-modal").show();
+    //         $(".img-modal-body h2").text( $(this).find("h2").text() );
+    //         $(".img-modal-body .img").html( $(this).find("p").html() );
+    //         $(".img-modal-body .link-close a").attr("href", $(this).find("p img").attr("src"))
+    //         return false;
+            
+    //     })
+    // })
+
+    $(".img-modal-close").click(function(){
+        $(".img-modal").hide();
+    })
 
     // 스크롤 애니메이션
     $(".section").each(function(index){

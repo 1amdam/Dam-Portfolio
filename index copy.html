@@ -14,7 +14,7 @@
         <script src="./js/common.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
         <link rel="stylesheet" href="./css/animated-counter-prograssbar.css">
-        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/common copy.css">
 
     </head>
     <body>
@@ -182,12 +182,14 @@
                     <div class="web-group web-view">
                         <!-- <h2>GRASSY</h2> -->
                         <div class="web-img">
-                            <a href="#">
+                            <a href=" https://1amdam.github.io/Grassy/" target="_blank">
                                 <picture>
                                     <source media="(min-width: 768px)" srcset="./images/8.png">
                                     <img src="./images/phone-img.png" alt="coffee">
                                 </picture>
                             </a>
+                               
+            
                 
                             <!-- <div class="response">
                                 <img src="./images/response.png">
@@ -214,31 +216,68 @@
                 </div>
             </section>
             <section class="section" id="banner">
-                <h2>배너</h2>
-                <div class="banner-box">
-                    <div>
-                        <a href="#">
-                            <img src="./images/banner1.png">
-                        </a>
-                        <!-- <a href="#">
-                            <img src="./images/banner2.jpg">
-                        </a> -->
-                        <a href="#">
-                            <img src="./images/banner5.jpg">
-                        </a>
-                    
-                        <a href="#">
-                            <img src="./images/banner4.jpg">
-                        </a>
-                        <a href="#">
-                            <img src="./images/banner3.jpg">
-                        </a>
-                        <a href="#">
-                            <img src="./images/banner7.jpg">
-                        </a>
-                        
+                <div class="wrap"> <!-- 배너표시영역 -->
+                    <div class="rolling-list"> <!-- 원본배너 -->
+                        <ul>
+                            <li>
+                                <div class="image-wrap"><img src="./img/img_banner1.svg" alt=""></div>
+                                <div class="desc">
+                                    <!-- <strong>First Banner</strong> -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image-wrap"><img src="./img/img_banner2.svg" alt=""></div>
+                                <div class="desc">
+                                    <!-- <strong>Second Banner</strong> -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image-wrap"><img src="./img/img_banner3.svg" alt=""></div>
+                                <div class="desc">
+                                    <!-- <strong>Third Banner</strong> -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image-wrap"><img src="./img/img_banner4.svg" alt=""></div>
+                                <div class="desc">
+                                    <!-- <strong>Fourth Banner</strong> -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image-wrap"><img src="./img/img_banner4.svg" alt=""></div>
+                                <div class="desc">
+                                    <!-- <strong>Fourth Banner</strong> -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image-wrap"><img src="./img/img_banner4.svg" alt=""></div>
+                                <div class="desc">
+                                    <strong>Fourth Banner</strong>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/>
+                                    Neque cumque ratione provident nulla veniam nihil quaerat, illum officiis hic.<br/>
+                                    Laborum in eos possimus, quo ullam nobis nam nemo fuga ipsam?</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <script type="text/javascript">
+                    // 롤링 배너 복제본 생성
+                    let roller = document.querySelector('.rolling-list');
+                    roller.id = 'roller1'; // 아이디 부여
+
+                    let clone = roller.cloneNode(true)
+                    // cloneNode : 노드 복제. 기본값은 false. 자식 노드까지 복제를 원하면 true 사용
+                    clone.id = 'roller2';
+                    document.querySelector('.wrap').appendChild(clone); // wrap 하위 자식으로 부착
+
+                    document.querySelector('#roller1').style.left = '0px';
+                    document.querySelector('#roller2').style.left = document.querySelector('.rolling-list ul').offsetWidth + 'px';
+                    // offsetWidth : 요소의 크기 확인(margin을 제외한 padding값, border값까지 계산한 값)
+
+                    roller.classList.add('original');
+                    clone.classList.add('clone');
+                </script>
                 
             </section>
             <section class="section" id="detail">

@@ -13,6 +13,7 @@
         <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
         <script src="./js/common.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+        <link rel="stylesheet" href="./css/animated-counter-prograssbar.css">
         <link rel="stylesheet" href="css/common.css">
 
     </head>
@@ -32,107 +33,276 @@
         </div>
         
         <main>
-            <section class="section" id="about">
+            <section class="section" id="first">
                 <header>
                     <div class="header-wrap">
-                        <h1>PORTFOLIO</h1>
+                        <h1 class="logo">
+                            <a href="#">
+                                <img src="./images/logo.png">
+                            </a>
+                        </h1>
                         <nav class="nav-wrap">
                             <button class="navBt">Work view</button>
                             <div class="nav-list">
-                                <a href="#about" class="clickActive">About</a>
+                                <a href="#home" class="clickActive">HOME</a>
+                                <a href="#about">About</a>
                                 <a href="#web">Website</a>
                                 <a href="#banner">Banner</a>
                                 <a href="#detail">Detail</a>
                                 <a href="#icon">Icon</a>
                                 <a href="#skill">Skill</a>
-                                <a href="#ep">Epilogue</a>
                             </div>
                             
                         </nav>
                     </div>
                 </header>
+                <div class="zero-box">
+                    <h2>Hello stranger
+                        <br> This is
+                    </h2>
+                    <div class="roll-txt">
+                        <span id="rolltext">
+                            Dam<br/>
+                            Design<br/>
+                            Portfolio<br/>
+                        </span>
+                    </div>
+                    <!-- <div class="tape">
+                        <img src="./images/tape2.png">
+                    </div> -->
+                </div>
+            </section>
+            <section class="section" id="about">
                 <div class="first-box">
                     <div class="about-group1">
-                        <h2>About Me</h2>
+                        <h2>Who am I?</h2>
                         <div class="photo">
-                            <img src="images/m-s2.jpg" alt="프로필 사진">
+                            <img src="images/rabbit.jpg" alt="프로필 사진">
                         </div>
                     </div>
                     <div class="about-group2">
-                        <ul>
-                            <li><strong>이름 : </strong></li>
-                            <li><strong>나이 : </strong>나이</li>
-                            <li><strong>생년월일 : </strong>학력 또는 생년월일</li>
-                            <li><strong>취미 : </strong>학습소개 또는 취미</li>
-                            <li><strong>좌우명 :</strong>경력사항 또는 좌우명</li>
-                        </ul>
+                        <!-- <ul>
+                            <li><strong>KIM DAM HYE</strong>2000.06.10</li>
+                            <li><strong>EDUCATION</strong>경희대학교 미디어학과</li>
+                            <li><strong>ACTIVITIES</strong>어쩌구 저쩌구..</li>
+                            <li><strong>SKILLS</strong></li>
+                        </ul> -->
+                       <div class="a-gr2-wrap">
+                            <div class="a-gr2">
+                                <h3>KIM DAM HYE</h3>
+                                <div class="gr2-content">
+                                    <h4>2000.06.10</h4>
+                                    <h4>010-4032-5380</h4>
+                                    <h4>@dam2_0</h4>
+                                    <h4>damhye11@naver.com</h4>
+                                </div>
+                            </div>
+                            <div class="a-gr2">
+                                <h3>EDUCATION</h3>
+                                <div class="gr2-content">
+                                    <h4>경희대학교 미디어학과</h4>
+                                </div>
+                            </div>
+                            <div class="a-gr2">
+                                <h3>ACTIVITIES</h3>
+                                <div class="gr2-content">
+                                    <h4>SJDSJFDHJKDF</h4>
+                                </div>
+                            </div>
+                            <div class="a-gr2">
+                                <h3>SKILLS</h3>
+                                <div class="gr2-content">
+                                    <div class="myskill">
+                                        <div class="container">
+                                            <!-- <h1>Animated Counter Prograssbar Examples</h1> -->
+                                            <div class="progressbar-item">
+                                                <h4 class="progress-title">Photoshop</h4>
+                                                <div progress-bar data-percentage="80%">
+                                                    <div class="progress-number">
+                                                        <div class="progress-number-mark">
+                                                            <span class="percent"></span>
+                                                            <span class="down-arrow"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="progress-bg">
+                                                        <div class="progress-fill"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progressbar-item">
+                                                <h4 class="progress-title">Illustrator</h4>
+                                                <div progress-bar data-percentage="70%">
+                                                    <div class="progress-number">
+                                                        <div class="progress-number-mark">
+                                                            <span class="percent"></span>
+                                                            <span class="down-arrow"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="progress-bg">
+                                                        <div class="progress-fill"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progressbar-item">
+                                                <h4 class="progress-title">UI/UX</h4>
+                                                <div progress-bar data-percentage="50%">
+                                                    <div class="progress-number">
+                                                        <div class="progress-number-mark">
+                                                            <span class="percent"></span>
+                                                            <span class="down-arrow"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="progress-bg">
+                                                        <div class="progress-fill"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+                                        <script src="./js/animated-counter-prograssbar.js"></script>
+                                    </div>
+                            </div>
+                        </div>
+                       </div>
+                       
                         <div class="about">
                             자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 
                              자기소개 자기소개 자기소개 자기소개  
                         </div>
+                       
                     </div>
                     
 
                 </div>
-            </section>
+            </section>    
+            
             <section class="section" id="web">
-                <div class="container">
+                <div class="w-container">
                     <div class="web-group web-view">
-                        <h2>Coffee Website</h2>
+                        <!-- <h2>GRASSY</h2> -->
                         <div class="web-img">
-                            <a href="#">
+                            <a href=" https://1amdam.github.io/Grassy/" target="_blank">
                                 <picture>
-                                    <source media="(min-width: 1024px)" srcset="./images/8.png">
+                                    <source media="(min-width: 768px)" srcset="./images/8.png">
                                     <img src="./images/phone-img.png" alt="coffee">
                                 </picture>
                             </a>
+                               
+            
                 
-                            <div class="response">
+                            <!-- <div class="response">
                                 <img src="./images/response.png">
-                            </div>
+                            </div> -->
                             <span class="more">
-                                작업보기
+                                MORE VIEW
                             </span>
 
                         </div>
                     </div>
                     <div class="web-group web-explan">
-                        <h2>Coffee Website</h2>
-                        <div class="response">
+                        <h2>Grassy는 2023년에 제작된 반응형 웹사이트로, 메인페이지, 메뉴, shop 페이지 등 일부가 구축된 상태입니다.<br>
+                            Swiper 플러그인을 활용하여 자동으로 넘어가는 슬라이더를 구현하였고 select 대신 ul, li를 활용하여 선택창에 디자인을 추가하는 등 다양한 시도를 해보았습니다.
+
+                        </h2>
+                        <!-- <div class="response">
                             <img src="./images/response.png">
-                        </div>
+                        </div> -->
                         <span class="more">
-                            작업보기
+                            MORE VIEW
                         </span>
+                        
                     </div>
                 </div>
             </section>
             <section class="section" id="banner">
-                <h2>배너</h2>
-                <div class="banner-box">
-                    <div>
-                        <a href="#">
-                            <img src="./images/event1.jpg">
-                        </a>
-                        <a href="#">
-                            <img src="./images/event2.jpg">
-                        </a>
-                        <a href="#">
-                            <img src="./images/event3.jpg">
-                        </a>
-                    
-                        <a href="#">
-                            <img src="./images/event1.jpg">
-                        </a>
-                        <a href="#">
-                            <img src="./images/event2.jpg">
-                        </a>
-                        <a href="#">
-                            <img src="./images/event3.jpg">
-                        </a>
-                        
+                <div class="wrap"> <!-- 배너표시영역 -->
+                    <h2>BANNERS</h2>
+                    <h3>BRAND* <br>
+                        SCULPTOR  HEYDEALER<br>
+                    </h3>
+                    <h4> NON-BRAND*<br>
+                        COSMETIC</h4>
+                    <div class="rolling-list"> <!-- 원본배너 -->
+                        <ul>
+                            <li>
+                                <div class="desc">
+                                    <strong></strong>
+                                    <div class="circle">
+                                        <div class="circle-1">.</div>
+                                        <div class="circle-1">.</div>
+                                        <div class="circle-1">.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="desc">
+                                    <strong></strong>
+                                    <div class="circle">
+                                        <div class="circle-1">.</div>
+                                        <div class="circle-1">.</div>
+                                        <div class="circle-1">.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="desc">
+                                    <strong></strong>
+                                    <div class="circle">
+                                        <div class="circle-1">.</div>
+                                        <div class="circle-1">.</div>
+                                        <div class="circle-1">.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="desc">
+                                    <strong></strong>
+                                    <div class="circle">
+                                        <div class="circle-1">.</div>
+                                        <div class="circle-1">.</div>
+                                        <div class="circle-1">.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="desc">
+                                    <strong></strong>
+                                    <div class="circle">
+                                        <div class="circle-1">.</div>
+                                        <div class="circle-1">.</div>
+                                        <div class="circle-1">.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="desc">
+                                    <strong>Fourth Banner</strong>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/>
+                                    Neque cumque ratione provident nulla veniam nihil quaerat, illum officiis hic.<br/>
+                                    Laborum in eos possimus, quo ullam nobis nam nemo fuga ipsam?</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <script type="text/javascript">
+                    // 롤링 배너 복제본 생성
+                    let roller = document.querySelector('.rolling-list');
+                    roller.id = 'roller1'; // 아이디 부여
+
+                    let clone = roller.cloneNode(true)
+                    // cloneNode : 노드 복제. 기본값은 false. 자식 노드까지 복제를 원하면 true 사용
+                    clone.id = 'roller2';
+                    document.querySelector('.wrap').appendChild(clone); // wrap 하위 자식으로 부착
+
+                    document.querySelector('#roller1').style.left = '0px';
+                    document.querySelector('#roller2').style.left = document.querySelector('.rolling-list ul').offsetWidth + 'px';
+                    // offsetWidth : 요소의 크기 확인(margin을 제외한 padding값, border값까지 계산한 값)
+
+                    roller.classList.add('original');
+                    clone.classList.add('clone');
+                </script>
                 
             </section>
             <section class="section" id="detail">
@@ -144,10 +314,7 @@
             <section class="section" id="skill">
                 <h2>스킬</h2>
             </section>
-            <section class="section" id="ep">
-                <h2>Epilogue</h2>
-            </section>
-            <footer>푸터</footer>
+            <!-- <footer>푸터</footer> -->
         </main>
     </body>
 </html>
