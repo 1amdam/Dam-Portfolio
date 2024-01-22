@@ -16,7 +16,7 @@
         {
             width: $(this).attr("data-percentage"),
         },
-        2000
+        9000
         );
 
     $(this)
@@ -24,7 +24,7 @@
         .animate(
         { left: $(this).attr("data-percentage") },
         {
-            duration: 2000,
+            duration: 9000,
             step: function (now, fx) {
             var data = Math.round(now);
             $(this)
