@@ -35,11 +35,10 @@ $(document).ready(function(){
       $(window).resize(function(){
         $wh()
         wheel();
-        // ////////////////////////////////////////////////////////////////////////
-        /* $("html,body").stop().animate({
+        
+        $("html,body").stop().animate({
           scrollTop:winHeight*activeIndex
-         }); */
-        // ///////////////////////////////////////////////////////////////////////// 
+         },0); 
         
       })
     
