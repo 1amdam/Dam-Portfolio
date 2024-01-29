@@ -553,13 +553,174 @@ section:nth-child(2){
     color:white;
     border-radius:50px;
 }
-.web-view .response{
-    display: block;
-    left:10px;
-    bottom:10px;
-}
+
 .web-view .more{
     display:block;
+}
+
+.web-modal{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9999;
+    display:none;
+}
+.web-modal-body{
+    width:90%;
+    height:85%;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background:rgb(236, 239, 234);
+    padding:10px;
+    border-radius: 20px;
+}
+.web-modal-body h2{
+    width:100%;
+    padding:10px;
+    text-align: center;
+    margin-bottom:20px;
+}
+.web-modal-body .img{
+    width: 100%;;
+}
+.modal-pic img{
+    width:100%;
+}
+.web-close{
+    width: 30px;
+}
+.web-close img{
+    width: 100%;
+}
+.concept{
+    display:flex;
+    width:90%;
+    margin: auto;
+    padding:10px 0;
+    line-height:200%;
+    font-size:1.2rem;
+    margin-bottom:20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+}
+.modal-exp{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+
+}
+.modal-exp .web-close{
+    border: none;
+    background-color: transparent;
+    font-size: 2.3rem;
+
+}
+.c-name{
+    width: 22%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.c-box:nth-child(2) .c-name{
+    width: 25%;
+    /* border: 1px solid black; */
+}
+.c-chk{
+    color: #267152;
+    font-size: 1.15rem;
+}
+.c-name h3{
+    font-size: 1.4rem;
+    color: #267152;
+}
+.c-box{
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-bottom: 20px;
+}
+.c-box span{
+    font-size: 1rem;
+    line-height: 1px;
+}
+.c-logo-i{
+    width: 200px;
+    /* border: 1px solid rgb(255, 177, 177); */
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.c-logo-i img{
+    width: 100%;
+}
+.c-color{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid blue; */
+    
+}
+.color-txt{
+    width: 55%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+.c-color h4{
+    font-size: 1.3rem;
+    color: #4d8463;
+}
+.c-color h5{
+    font-weight: 500;
+}
+.c-circle{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: #4d8463;
+    text-indent: 9999px;
+}
+.c-circle2{
+    background-color: #232121;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    text-indent: 9999px;
+
+}
+.color-txt .c2{
+    color: #232121;
+
+}
+.color-txt{
+    position: relative;
+}
+.color-txt span{
+    position: absolute;
+    top: 0px;
+    background-color: #4b5850c5;
+    padding: 10px 8px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+.color-txt span::after{
+    content: "";
+    position: absolute;
+    border-top: 7px solid  transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #4b5850c5;
+    border-bottom: 7px solid transparent;
+    /* border-color: #1D4D50 white black blue; */
+    bottom: -8px;
+    right: 50%;
 }
 
 .side-wrap{
@@ -1104,10 +1265,9 @@ section:nth-child(4){
     border-radius: 26px;
     backdrop-filter: blur(6px);
     box-shadow: 0px 35px 68px 0px rgba(145, 192, 255, 0.3), inset 0px -8px 16px 0px rgba(145, 192, 255, 0.5), inset 0px 11px 30px 0px rgb(255, 255, 255,0.7);
-    border-radius: 15px;
+    border-radius: 25px;
     margin: 5px 0;
-    padding: 5px 0;
-    padding: 15px 0;
+    padding: 6px 0;
 
 
 }
@@ -1121,11 +1281,10 @@ section:nth-child(4){
     border-radius: 26px;
     backdrop-filter: blur(6px);
     box-shadow: 0px 35px 68px 0px rgba(145, 192, 255, 0.3), inset 0px -8px 16px 0px rgba(145, 192, 255, 0.5), inset 0px 11px 30px 0px rgba(255, 255, 255, 0.7);
-    border-radius: 15px;
+    border-radius: 25px;
     margin: 5px 0;
-    padding: 5px 0;
     margin: auto;
-    padding: 15px 0;
+    padding: 6px 0;
 
 
 
@@ -1209,11 +1368,14 @@ section:nth-child(4){
         width: 90%;
         border-radius: 30px;
         /* border: 1px solid black; */
+        padding: 15px 0;
+
     }
     .icon-container2{
         max-width: 430px;
         width: 90%;
         border-radius: 30px;
+        padding: 15px 0;
 
     }
     .i-box{
@@ -1358,6 +1520,9 @@ section:nth-child(4){
     }
     .a-gr2-wrap{
         margin-top: 30px; 
+    }
+    .c-box{
+        width: 45%;
     }
     .first-box{
         /* padding-top: 15%; */

@@ -227,6 +227,31 @@ $(document).ready(function(){
                 
                return false; 
             })
+            $(".web-group .more").click(function(){
+                $(".web-modal").show();
+                $(".web-modal-body h2").text( $(this).parents(".web-box").find("h2").text() );
+                $(".web-modal-body .img").html( $(this).parents(".web-box").find(".resort-image").html() )
+                $(".web-modal-body .concept").html( $(this).parents(".web-box").find(".concept").html() )
+                $(".web-modal-body .modal-exp a").attr("href", $(this).parents(".web-box").find(".exp a").attr("href"))
+            })
+            $(".web-close").click(function(){
+                $(".web-modal").hide();
+            })
+        
+            $(".b-d-box a").each(function(){
+                $(this).click(function(){
+                    $(".img-modal").show();
+                    $(".img-modal-body h2").text( $(this).find("h2").text() );
+                    $(".img-modal-body .img").html( $(this).find("p").html() );
+                    $(".img-modal-body .link-close a").attr("href", $(this).find("p img").attr("src"))
+                    return false;
+                    
+                })
+            })
+        
+            $(".img-modal-close").click(function(){
+                $(".img-modal").hide();
+            })
             
         })
 
